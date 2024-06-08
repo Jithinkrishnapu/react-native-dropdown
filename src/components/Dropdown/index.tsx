@@ -149,7 +149,7 @@ const DropdownComponent: <T>(
         onSearch(searchText);
       }
       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [data, searchText]);
+    }, [searchText]);
 
     const eventOpen = () => {
       if (!disable) {
@@ -320,7 +320,6 @@ const DropdownComponent: <T>(
       keyboardHeight,
       visible,
       _measure,
-      data,
       searchText,
       scrollIndex,
       onFocus,
